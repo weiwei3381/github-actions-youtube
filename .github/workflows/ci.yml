@@ -15,6 +15,7 @@ jobs:
           git config --local user.name "wowbat"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
+          chmod -R 777 ./bin
           ./bin/youtube-dl --config-location config.txt
           git add .
           git commit -m "download youtube video"
