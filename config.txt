@@ -1,10 +1,12 @@
 --batch-file playlist.txt
+--output downloads/%(title)s_%(id)s.%(ext)s
 
 # download the filesize smaller than 95Mib, and download bestaudio
 -f "best[filesize<95M],bestaudio"
 
---output downloads/%(title)s_%(id)s.%(ext)s
 --continue
+
+
 # --write-description
 # --write-info-json
 # --write-thumbnail
