@@ -2,7 +2,7 @@
 --output downloads/%(title)s_%(id)s.%(ext)s
 
 # download the filesize smaller than 95Mib, and download bestaudio
--f "best[filesize<95M],bestaudio"
+-f "bestaudio[filesize<95M]"
 
 --continue
 
