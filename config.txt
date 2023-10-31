@@ -1,5 +1,5 @@
 --batch-file playlist.txt
---output downloads/%(title)s_%(id)s.%(ext)s
+--output downloads/%(title).40s_%(id)s.%(ext)s
 
 # download the filesize smaller than 95Mib, and download bestaudio
 -f "bestaudio[filesize<95M]"
